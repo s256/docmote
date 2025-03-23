@@ -1,8 +1,8 @@
-const { contextBridge } = require('electron');
+const { contextBridge } = require("electron");
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener("DOMContentLoaded", () => {
   // Inject CSS for draggable + space for window controls
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   style.innerText = `
     /* Make header draggable */
     header {
@@ -24,5 +24,5 @@ window.addEventListener('DOMContentLoaded', () => {
   document.head.appendChild(style);
 
   // Optional: log for debugging
-  console.log('[Docmote] Injected draggable header styling');
+  console.log("[Docmote] Injected draggable header styling");
 });
