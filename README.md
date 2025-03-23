@@ -1,6 +1,6 @@
 # Docmote
 
-Minimal macOS desktop wrapper for [Docmost](https://docmost.com) — the open-source collaborative wiki and documentation platform.
+Minimal macOS desktop client for [Docmost](https://docmost.com) — the open-source collaborative wiki and documentation platform.
 
 Docmote lets you run your personal or team-hosted **Docmost instance** as a native macOS app with clean system integration and a focused UI.
 
