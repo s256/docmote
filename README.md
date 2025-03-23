@@ -11,6 +11,9 @@ Docmote lets you run your personal or team-hosted **Docmost instance** as a nati
 - 🧭 macOS-style window behavior with drag regions and traffic lights
 - 💾 Persistent custom instance URL (entered once on first launch)
 
+
+<img width="1245" alt="image" src="https://github.com/user-attachments/assets/0c08a259-43ff-4cac-8e40-db59cf42c0f0" />
+
 ---
 
 ### 📦 Download
