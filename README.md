@@ -19,7 +19,7 @@ Docmote lets you run your personal or team-hosted **Docmost instance** as a nati
 ### 📦 Download
 
 Grab the latest release here:  
-👉 [**Download Docmote for macOS**](https://github.com/bandundu/docmote/releases/tag/v1.0.0)
+[**Download Docmote for macOS**](https://github.com/bandundu/docmote/releases/tag/v1.0.0)
 
 Supports Apple Silicon (`.dmg`, arm64).
 
