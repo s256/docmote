@@ -2,11 +2,13 @@
   "name": "docmote",
   "version": "1.0.0",
   "main": "main.js",
+  "productName": "Docmote",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -15,6 +17,21 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
     "electron": "^35.0.3",
+    "electron-builder": "^24.6.0",
     "vite": "^6.2.2"
+  },
+  "build": {
+    "appId": "com.charles.docmote",
+    "mac": {
+      "icon": "assets/docmost.icns",
+      "target": "dmg"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "preload.js",
+      "assets/docmost.icns",
+      "package.json"
+    ]
   }
 }
