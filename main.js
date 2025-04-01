@@ -36,6 +36,7 @@ if (!gotTheLock) {
 
   function createWindow() {
     const storedUrl = getStoredURL();
+    const isMac = process.platform === "darwin";
     let baseOrigin = null;
 
     if (storedUrl) {
@@ -51,10 +52,12 @@ if (!gotTheLock) {
       height: 800,
       minWidth: 600,
       minHeight: 600,
-      icon: path.join(__dirname, "assets", "docmost.icns"),
-      frame: false,
-      titleBarStyle: "hidden",
-      trafficLightPosition: { x: 10, y: 13 },
+      icon: path.join(__dirname, "assets", isMac ? "docmost.icns" : "docmost.svg"),
+      frame: !isMac, // false on macOS (custom frame), true on Linux (native)
+      titleBarStyle: isMac ? "hidden" : undefined,
+      ...(isMac && {
+        trafficLightPosition: { x: 10, y: 13 }
+      }),
       webPreferences: {
         preload: path.join(__dirname, "preload.js"),
         contextIsolation: true,
