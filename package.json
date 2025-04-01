@@ -31,6 +31,7 @@
       "main.js",
       "preload.js",
       "assets/docmost.icns",
+      "assets/docmost.png",
       "package.json"
     ],
     "mac": {
@@ -38,7 +39,7 @@
       "target": "dmg"
     },
     "linux": {
-      "icon": "assets/docmost.svg",
+      "icon": "assets/docmost.png",
       "target": [
         "AppImage"
       ],
